@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UniMaster.master.cs"
+    Inherits="dongphucdangcap.com.UniMaster" %>
+
+<%@ Register TagName="headers" TagPrefix="usc" Src="/UserControl/header.ascx" %>
+<%@ Register TagName="footer" TagPrefix="usc" Src="/UserControl/footer.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>iUni</title>
+    <meta http-equiv="EXPIRES" content="0" />
+    <meta name="RESOURCE-TYPE" content="DOCUMENT" />
+    <meta name="DISTRIBUTION" content="GLOBAL" />
+    <meta name="AUTHOR" content="dongphucdangcap.com" />
+    <meta name="COPYRIGHT" content="Copyright © 2010 dongphucdangcap.com All rights reserved " />
+    <meta name="ROBOTS" content="INDEX, FOLLOW" />
+    <meta name="Googlebot" content="index,follow,archive">
+    <meta name="GENERATOR" content="dongphucdangcap.com" />
+    <meta name="RATING" content="GENERAL" />
+    <meta name="abstract" content="Website đồng phục đẹp, teen phục vụ hàng nghìn sinh viên Việt Nam" />
+    <link href="/Content/style.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<%--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>--%>
+    <script src="/Scripts/jquery.jscrollpane.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.mousewheel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-35571805-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="fb-root">
+    </div>
+
+    <script type="text/javascript">        
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+        
+    </script>
+    <usc:headers runat="server" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <usc:footer runat="server" />
+    <script src="/Scripts/dongphucdangcap.js" type="text/javascript"></script> 
+</body>
+</html>

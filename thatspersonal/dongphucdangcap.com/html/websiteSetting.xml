@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <listCate>
+    <cate id="0">
+      <title>Đồng phục | Làm áo lớp | Dong phuc | Lam ao lop | Dong phuc lop | dongphucdangcap.com | Đồng phục công sở</title>
+      <description>dong phuc lop, đồng phục lớp, ao dong phuc, áo đồng phục, thiết kế áo đồng phục, thiet ke ao dong phuc, dongphucdangcap.com</description>
+      <keyword>Ao dong phuc lop - Thiết kế Áo Đồng Phục Lớp , in áo đồng phục lớp chuyên nghiệp, tư vấn thiết kế miễn phí mẫu áo đông phục lớp đẹp</keyword>
+      <favicon>/Images/fav.ico</favicon>
+    </cate>
+    <cate id="1">
+      <title>Trang sản phẩm | Đồng phục đẳng cấp</title>
+      <name>Sản phẩm</name>
+      <description>Các sản phẩm trên trang đồng phục đẳng cấp đa dạng về mẫu mã...</description>
+      <link>/san-pham.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+    <cate id="2">
+      <title>Trang bảng giá | Đồng phục đẳng cấp</title>
+      <name>Bảng giá</name>
+      <description>Các bảng giá  mẫu mã...</description>
+      <link>/bang-gia.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+    <cate id="3">
+      <title>Trang tư vấn | Đồng phục đẳng cấp</title>
+      <name>Tư vấn</name>
+      <description>Các sản phẩm trên trang đồng phục đẳng cấp đa dạng về mẫu mã...</description>
+      <link>/san-pham.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+    <cate id="4">
+      <title>Trang tuyển dụng | Đồng phục đẳng cấp</title>
+      <name>Tuyển dụng</name>
+      <description>Các sản phẩm trên trang đồng phục đẳng cấp đa dạng về mẫu mã...</description>
+      <link>/san-pham.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+    <cate id="5">
+      <title>Trang tin tức | Đồng phục đẳng cấp</title>
+      <name>Tin tức</name>
+      <description>Các sản phẩm trên trang đồng phục đẳng cấp đa dạng về mẫu mã...</description>
+      <link>/san-pham.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+    <cate id="6">
+      <title>Trang giới thiệu| Đồng phục đẳng cấp</title>
+      <name>giới thiệu</name>
+      <description>Các sản phẩm trên trang đồng phục đẳng cấp đa dạng về mẫu mã...</description>
+      <link>/san-pham.htm</link>
+      <keyword>Sản phẩm, dong phục</keyword>
+    </cate>
+  </listCate>
+</data>

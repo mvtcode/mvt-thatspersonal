@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dongphucdangcap.com", "dongphucdangcap.com\dongphucdangcap.com.csproj", "{F2947143-B9B3-46E2-9B9E-9588F6AC22E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tuanva.Core", "tuanva.core\tuanva.Core.csproj", "{944078BD-BCE5-4DB3-A8AB-38E0B166B942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uniform.Entity", "uniform.Entity\uniform.Entity.csproj", "{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uniform.Impl", "uniform.Impl\uniform.Impl.csproj", "{B6222F08-3653-4FEB-9617-1B7B17082E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uniform.Services", "uniform.Services\uniform.Services.csproj", "{04BF315A-887E-4031-A356-69B458B19307}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = dongphucdangcap.com\\dongphucdangcap.com.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = dongphucdangcap.com\\
+		SccProjectUniqueName2 = tuanva.core\\tuanva.Core.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = tuanva.core\\
+		SccProjectUniqueName3 = uniform.Entity\\uniform.Entity.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = uniform.Entity\\
+		SccProjectUniqueName4 = uniform.Impl\\uniform.Impl.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = uniform.Impl\\
+		SccProjectUniqueName5 = uniform.Services\\uniform.Services.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = uniform.Services\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2947143-B9B3-46E2-9B9E-9588F6AC22E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2947143-B9B3-46E2-9B9E-9588F6AC22E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2947143-B9B3-46E2-9B9E-9588F6AC22E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2947143-B9B3-46E2-9B9E-9588F6AC22E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944078BD-BCE5-4DB3-A8AB-38E0B166B942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944078BD-BCE5-4DB3-A8AB-38E0B166B942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944078BD-BCE5-4DB3-A8AB-38E0B166B942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944078BD-BCE5-4DB3-A8AB-38E0B166B942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6222F08-3653-4FEB-9617-1B7B17082E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6222F08-3653-4FEB-9617-1B7B17082E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6222F08-3653-4FEB-9617-1B7B17082E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6222F08-3653-4FEB-9617-1B7B17082E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BF315A-887E-4031-A356-69B458B19307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BF315A-887E-4031-A356-69B458B19307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BF315A-887E-4031-A356-69B458B19307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BF315A-887E-4031-A356-69B458B19307}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

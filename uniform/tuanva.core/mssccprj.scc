@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[Lic.Accounting.Core.csproj]
+SCC_Aux_Path = "\\liclocal\Lic_Project"
+SCC_Project_Name = "$/SunLaw.root/SunLaw/SunLawv1.Core", VNFBAAAA
+
+[SunLaw.Core.csproj]
+SCC_Aux_Path = "\\liclocal\Lic_Project"
+SCC_Project_Name = "$/SunLaw.root/SunLaw/SunLawv1.Core", VNFBAAAA
+
+[tuanva.Core.csproj]
+SCC_Aux_Path = "\\192.168.19.22\CodeProject"
+SCC_Project_Name = "$/uniform.root/uniform/tuanva.core", GCJAAAAA

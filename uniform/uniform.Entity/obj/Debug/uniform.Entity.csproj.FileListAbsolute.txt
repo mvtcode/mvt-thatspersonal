@@ -1,0 +1,10 @@
+E:\PartTime\uniform\uniform.Entity\bin\Debug\uniform.Entity.dll
+E:\PartTime\uniform\uniform.Entity\bin\Debug\uniform.Entity.pdb
+E:\PartTime\uniform\uniform.Entity\obj\Debug\ResolveAssemblyReference.cache
+E:\PartTime\uniform\uniform.Entity\obj\Debug\uniform.Entity.dll
+E:\PartTime\uniform\uniform.Entity\obj\Debug\uniform.Entity.pdb
+D:\Project\uniform\uniform.Entity\bin\Debug\uniform.Entity.dll
+D:\Project\uniform\uniform.Entity\bin\Debug\uniform.Entity.pdb
+D:\Project\uniform\uniform.Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\uniform\uniform.Entity\obj\Debug\uniform.Entity.dll
+D:\Project\uniform\uniform.Entity\obj\Debug\uniform.Entity.pdb

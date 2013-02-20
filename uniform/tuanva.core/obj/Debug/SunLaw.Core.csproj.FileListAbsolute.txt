@@ -1,0 +1,10 @@
+D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\SunLawv1.Core\bin\Debug\SunLaw.Core.dll
+D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\SunLawv1.Core\bin\Debug\SunLaw.Core.pdb
+D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\SunLawv1.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\SunLawv1.Core\obj\Debug\SunLaw.Core.dll
+D:\MULTI PROJECTS\ASPX Projects\Du An Lic\SunLaw\SunLawv1.Core\obj\Debug\SunLaw.Core.pdb
+D:\MULTI PROJECTS\ASPX Projects\102012\uniform\tuanva.core\bin\Debug\SunLaw.Core.dll
+D:\MULTI PROJECTS\ASPX Projects\102012\uniform\tuanva.core\bin\Debug\SunLaw.Core.pdb
+D:\MULTI PROJECTS\ASPX Projects\102012\uniform\tuanva.core\obj\Debug\ResolveAssemblyReference.cache
+D:\MULTI PROJECTS\ASPX Projects\102012\uniform\tuanva.core\obj\Debug\SunLaw.Core.dll
+D:\MULTI PROJECTS\ASPX Projects\102012\uniform\tuanva.core\obj\Debug\SunLaw.Core.pdb

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6222F08-3653-4FEB-9617-1B7B17082E3B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uniform.Impl</RootNamespace>
+    <AssemblyName>uniform.Impl</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdviceImpl.cs" />
+    <Compile Include="AdviceTypeImpl.cs" />
+    <Compile Include="AlbumImpl.cs" />
+    <Compile Include="carreerImpl.cs" />
+    <Compile Include="carreerTypeImpl.cs" />
+    <Compile Include="chatboxImpl.cs" />
+    <Compile Include="imageAlbumImpl.cs" />
+    <Compile Include="IntroductionImpl.cs" />
+    <Compile Include="IntroductionTypeImpl.cs" />
+    <Compile Include="newsImpl.cs" />
+    <Compile Include="newsPromotionImpl.cs" />
+    <Compile Include="newsTypeImpl.cs" />
+    <Compile Include="PriceImpl.cs" />
+    <Compile Include="PriceTypeImpl.cs" />
+    <Compile Include="productImpl.cs" />
+    <Compile Include="producTypeImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="slideshowImpl.cs" />
+    <Compile Include="UserImpl.cs" />
+    <Compile Include="userPromotionImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tuanva.core\tuanva.Core.csproj">
+      <Project>{944078BD-BCE5-4DB3-A8AB-38E0B166B942}</Project>
+      <Name>tuanva.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\uniform.Entity\uniform.Entity.csproj">
+      <Project>{D17396CF-6AB9-4D28-B6E7-4F57C37C61A1}</Project>
+      <Name>uniform.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\uniform.Services\uniform.Services.csproj">
+      <Project>{04BF315A-887E-4031-A356-69B458B19307}</Project>
+      <Name>uniform.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
