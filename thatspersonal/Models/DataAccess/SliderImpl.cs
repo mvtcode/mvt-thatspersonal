@@ -112,7 +112,7 @@ namespace Models.DataAccess
         public List<SliderInfo> GetAll()
         {
             List<SliderInfo> list = null;
-            var r = DataHelper.ExecuteReader(Config.ConnectString, "usp_slideshow_GetAll", null);
+            var r = DataHelper.ExecuteReader(Config.ConnectString, "usp_slider_GetAll", null);
             if (r != null)
             {
                 list = new List<SliderInfo>();

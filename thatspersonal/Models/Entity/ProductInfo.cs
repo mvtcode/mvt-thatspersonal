@@ -15,6 +15,7 @@ namespace Models.Entity
         public string description { get; set; }
         public string contents { get; set; }
         public string tag { get; set; }
+        public string Keyword{ get; set; }
         public string image { get; set; }
         public string altImage { get; set; }
         public bool isHot { get; set; }

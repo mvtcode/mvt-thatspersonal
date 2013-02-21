@@ -3,3 +3,8 @@ D:\Project\dongphucdangcap\uniform\tuanva.core\bin\Debug\SunLaw.Core.pdb
 D:\Project\dongphucdangcap\uniform\tuanva.core\obj\Debug\ResolveAssemblyReference.cache
 D:\Project\dongphucdangcap\uniform\tuanva.core\obj\Debug\SunLaw.Core.dll
 D:\Project\dongphucdangcap\uniform\tuanva.core\obj\Debug\SunLaw.Core.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\tuanva.core\bin\Debug\SunLaw.Core.dll
+E:\Project\mvt-thatspersonal\thatspersonal\tuanva.core\bin\Debug\SunLaw.Core.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\tuanva.core\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\mvt-thatspersonal\thatspersonal\tuanva.core\obj\Debug\SunLaw.Core.dll
+E:\Project\mvt-thatspersonal\thatspersonal\tuanva.core\obj\Debug\SunLaw.Core.pdb

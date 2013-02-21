@@ -11,3 +11,16 @@ D:\Project\dongphucdangcap\uniform\dongphucdangcap.com\bin\CKFinder.pdb
 D:\Project\dongphucdangcap\uniform\dongphucdangcap.com\bin\Models.pdb
 D:\Project\dongphucdangcap\uniform\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.dll
 D:\Project\dongphucdangcap\uniform\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\dongphucdangcap.com.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\dongphucdangcap.com.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\CKFinder.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Helpers.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Models.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\SunLaw.Core.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Helpers.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\SunLaw.Core.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\CKFinder.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Models.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.dll
+E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.pdb

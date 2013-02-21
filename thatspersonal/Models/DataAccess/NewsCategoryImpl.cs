@@ -164,7 +164,7 @@ namespace Models.DataAccess
                 }
                 r.Close();
                 r.Dispose();
-                t = int.Parse(comx.Parameters[2].Value.ToString());
+                t = int.Parse(comx.Parameters[0].Value.ToString());
             }
 
             total = t;

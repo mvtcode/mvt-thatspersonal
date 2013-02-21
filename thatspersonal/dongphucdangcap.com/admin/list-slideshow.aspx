@@ -31,7 +31,7 @@
         PageSize="20" HeaderStyle-Font-Size="12px" RowStyle-Font-Size="12px" EnableTheming="False"
         EmptyDataText="Không tìm thấy bản ghi nào" CssClass="tblList" GridLines="Vertical"
         Width="100%" AllowPaging="True" OnPageIndexChanging="GV_Album_PageIndexChanging"
-        OnRowDeleting="GV_Album_RowDeleting" OnRowEditing="GV_Album_RowEditing" OnRowDataBound="GV_Album_RowDataBound">
+        OnRowDeleting="GV_Album_RowDeleting" OnRowEditing="GV_Album_RowEditing">
         <PagerStyle HorizontalAlign="Right" VerticalAlign="Middle" />
         <HeaderStyle HorizontalAlign="Center" Font-Bold="True" />
         <RowStyle Font-Size="12px"></RowStyle>

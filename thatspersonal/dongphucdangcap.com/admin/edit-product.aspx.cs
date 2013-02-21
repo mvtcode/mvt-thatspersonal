@@ -47,6 +47,7 @@ namespace dongphucdangcap.com.admin
             {
                 HD_ID.Value = info.id.ToString();
                 TB_Name.Text = info.name;
+                TB_ProductName.Text = info.ProductName;
                 HD_Image.Value = info.image;
                 HD_TypeID.Value = info.CateId.ToString();
                 if (DDL_ProductType.Items.FindByValue(info.CateId.ToString()) != null)
@@ -56,6 +57,7 @@ namespace dongphucdangcap.com.admin
                                       : Config.GetPathNoImage;
                 TB_Description.Text = info.description;
                 TB_Tag.Text = info.tag;
+                TB_Keyword.Text = info.Keyword;
                 TB_Content.Text = info.contents;
                 TB_Alt.Text = info.altImage;
                 TB_Price.Text = info.price.ToString();
@@ -82,7 +84,7 @@ namespace dongphucdangcap.com.admin
             //Lưu và quay lại list category
             if (save())
             {
-                Response.Redirect("list-product.aspx?type="+HD_TypeID.Value);
+                Response.Redirect("list-product.aspx?type=" + HD_TypeID.Value);
             }
         }
 
@@ -112,10 +114,11 @@ namespace dongphucdangcap.com.admin
                 description = TB_Description.Text.Trim(),
                 contents = TB_Content.Text.Trim(),
                 tag = TB_Tag.Text.Trim(),
+                Keyword =TB_Keyword.Text.Trim(),
                 price = UntilityFunction.IntegerForNull(TB_Price.Text.Trim()),
                 size = TB_Size.Text.Trim(),
                 image = HD_Image.Value,
-                ProductName = "",
+                ProductName = TB_ProductName.Text.Trim(),
                 altImage = TB_Alt.Text.Trim(),
                 isHot = false
             };
@@ -138,6 +141,7 @@ namespace dongphucdangcap.com.admin
         {
             HD_ID.Value = "0";
             TB_Name.Text = "";
+            TB_ProductName.Text = "";
             HD_Image.Value = "";
             //HD_TypeID.Value = "0";
             //if (DDL_ProductType.Items.Count > 0)

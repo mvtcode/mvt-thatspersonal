@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\NewsCategoryImpl.cs" />
     <Compile Include="DataAccess\NewsImpl.cs" />
+    <Compile Include="DataAccess\OrderDetailImpl.cs" />
     <Compile Include="DataAccess\OrderImpl.cs" />
     <Compile Include="DataAccess\PartnerImpl.cs" />
     <Compile Include="DataAccess\ProductCategoryImpl.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Entity\FacebookInfo.cs" />
     <Compile Include="Entity\NewsCategoryInfo.cs" />
     <Compile Include="Entity\NewsInfo.cs" />
+    <Compile Include="Entity\OrderDetailInfo.cs" />
     <Compile Include="Entity\OrderInfo.cs" />
     <Compile Include="Entity\PartnerInfo.cs" />
     <Compile Include="Entity\ProductCategoryInfo.cs" />

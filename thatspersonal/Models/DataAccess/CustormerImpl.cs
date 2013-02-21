@@ -32,14 +32,14 @@ namespace Models.DataAccess
         public int Update(CustormerInfo info)
         {
             SqlParameter[] param = {
-									   new SqlParameter("@id", info.id)
-			,new SqlParameter("@Email", info.Email),
-			new SqlParameter("@FirstName", info.FirstName),
-			new SqlParameter("@Lastname", info.Lastname),
-			//new SqlParameter("@Password", info.Password),
-			new SqlParameter("@Phone", info.Phone),
-			new SqlParameter("@Address", info.Address),
-			new SqlParameter("@Active", info.Active)			
+									   new SqlParameter("@id", info.id),
+                                       //new SqlParameter("@Email", info.Email),
+			                           new SqlParameter("@FirstName", info.FirstName),
+			                           new SqlParameter("@Lastname", info.Lastname),
+			                           //new SqlParameter("@Password", info.Password),
+			                           new SqlParameter("@Phone", info.Phone),
+			                           new SqlParameter("@Address", info.Address),
+			                           new SqlParameter("@Active", info.Active)			
 								   };
             return DataHelper.ExecuteNonQuery(Config.ConnectString, "usp_tblCustormer_Update", param);
         }

@@ -154,7 +154,7 @@ namespace Models.DataAccess
             return list;
         }
 
-        public List<NewsInfo> GetList(int pageIndex, int pageSize, out int total, int categoryId)
+        public List<NewsInfo> GetList(int pageIndex, int pageSize, out int total, int CateId)
         {
             List<NewsInfo> list = null;
             var t = 0;
@@ -162,7 +162,7 @@ namespace Models.DataAccess
                                        new SqlParameter("@pageIndex",pageIndex),
                                        new SqlParameter("@pageSize",pageSize),
                                        new SqlParameter("@totalrow",DbType.Int32){Direction = ParameterDirection.Output},
-                                       new SqlParameter("@categoryId",categoryId) 
+                                       new SqlParameter("@CateId",CateId) 
                                    };
             SqlCommand comx;
             var r = DataHelper.ExecuteReader(Config.ConnectString, "usp_news_GetList", param, out comx);

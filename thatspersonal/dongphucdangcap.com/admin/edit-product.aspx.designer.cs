@@ -50,6 +50,15 @@ namespace dongphucdangcap.com.admin {
         protected global::System.Web.UI.WebControls.TextBox TB_Name;
         
         /// <summary>
+        /// TB_ProductName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_ProductName;
+        
+        /// <summary>
         /// TB_Description control.
         /// </summary>
         /// <remarks>
@@ -75,6 +84,15 @@ namespace dongphucdangcap.com.admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TB_Tag;
+        
+        /// <summary>
+        /// TB_Keyword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TB_Keyword;
         
         /// <summary>
         /// Image1 control.

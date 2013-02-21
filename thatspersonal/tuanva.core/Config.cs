@@ -13,7 +13,7 @@ namespace tuanva.Core
             {
                 if(string.IsNullOrEmpty(_ConnectionString)) _ConnectionString= Encrypt.DecryptConn(ConfigurationManager.AppSettings["conStr"]);
                 //return _ConnectionString;
-               return @"SERVER=192.168.19.22;UID=sa;Password=123456;database=dongphuc-new";
+                return @"SERVER=sunlaw.com.vn;UID=webquanao;Password=mvt;database=dongphuc-new";
             }
         }
         private static string _ImgPathShow;

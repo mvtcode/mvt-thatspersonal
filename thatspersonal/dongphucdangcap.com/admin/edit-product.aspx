@@ -38,10 +38,18 @@
                     </tr>
                     <tr>
                         <td class="tblSkinHeaderColumn" width="150px">
-                            Tên sản phẩm
+                            Tiêu đề sản phẩm
                         </td>
                         <td class="tblSkinValueColumn">
                             <asp:TextBox ID="TB_Name" runat="server" Width="300px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tblSkinHeaderColumn" width="150px">
+                            Tên sản phẩm
+                        </td>
+                        <td class="tblSkinValueColumn">
+                            <asp:TextBox ID="TB_ProductName" runat="server" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr class="tblSkinRow">
@@ -66,6 +74,14 @@
                         </td>
                         <td class="tblSkinValueColumn">
                             <asp:TextBox ID="TB_Tag" runat="server" Width="300px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr class="tblSkinRow">
+                        <td class="tblSkinHeaderColumn">
+                            Keyword
+                        </td>
+                        <td class="tblSkinValueColumn">
+                            <asp:TextBox ID="TB_Keyword" runat="server" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr class="tblSkinRow">

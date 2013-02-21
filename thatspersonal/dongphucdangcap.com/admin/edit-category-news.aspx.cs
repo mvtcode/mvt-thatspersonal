@@ -50,11 +50,16 @@ namespace dongphucdangcap.com.admin
             }
             var info = new NewsCategoryInfo();
             info.Name = txtCategoryname.Text;
-            var nextId = UntilityFunction.nextId("tbl_newsType");
+            var nextId = UntilityFunction.nextId("NewsCategory");
             info.Link = Rewrite.GenCate(info.Name, nextId, Rewrite.News);
             info.Sort = int.Parse(txtSort.Text);
             info.Description = txtMota.Text;
+            info.MetaDescription=txtMota.Text;
+            info.MetaHeading = "";
             info.MetaKeyword = txtTukhoa.Text;
+            info.ParentId = 0;
+            info.TitleRewrite = "";
+            info.Image = "";
             NewsCategoryImpl.Instance.Add(info);
             return true;
         }
@@ -83,8 +88,12 @@ namespace dongphucdangcap.com.admin
                 info.Sort = int.Parse(txtSort.Text);
                 info.Link = Rewrite.GenCate(info.Name, info.Id, Rewrite.News);
                 info.Description = txtMota.Text;
+                info.MetaDescription=txtMota.Text;
+                info.MetaHeading = "";
                 info.MetaKeyword = txtTukhoa.Text;
-
+                info.ParentId = 0;
+                info.TitleRewrite = "";
+                info.Image = "";
                 NewsCategoryImpl.Instance.Update(info);
                 return true;
             }

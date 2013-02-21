@@ -5,3 +5,10 @@ D:\Project\dongphucdangcap\uniform\Models\bin\Debug\SunLaw.Core.pdb
 D:\Project\dongphucdangcap\uniform\Models\obj\Debug\ResolveAssemblyReference.cache
 D:\Project\dongphucdangcap\uniform\Models\obj\Debug\Models.dll
 D:\Project\dongphucdangcap\uniform\Models\obj\Debug\Models.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\Models\bin\Debug\Models.dll
+E:\Project\mvt-thatspersonal\thatspersonal\Models\bin\Debug\Models.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\Models\bin\Debug\SunLaw.Core.dll
+E:\Project\mvt-thatspersonal\thatspersonal\Models\bin\Debug\SunLaw.Core.pdb
+E:\Project\mvt-thatspersonal\thatspersonal\Models\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\mvt-thatspersonal\thatspersonal\Models\obj\Debug\Models.dll
+E:\Project\mvt-thatspersonal\thatspersonal\Models\obj\Debug\Models.pdb

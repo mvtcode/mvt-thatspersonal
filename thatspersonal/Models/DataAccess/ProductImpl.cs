@@ -25,6 +25,7 @@ namespace Models.DataAccess
 			    new SqlParameter("@description", info.description),
                 new SqlParameter("@contents", info.description),
 			    new SqlParameter("@tag", info.tag),
+                new SqlParameter("@Keyword", info.Keyword),
 			    new SqlParameter("@image", info.image),
 			    new SqlParameter("@altImage", info.altImage),
 			    new SqlParameter("@isHot", info.isHot),
@@ -46,6 +47,7 @@ namespace Models.DataAccess
 			                           new SqlParameter("@description", info.description),
                                        new SqlParameter("@contents", info.contents),
 			                           new SqlParameter("@tag", info.tag),
+                                       new SqlParameter("@Keyword", info.Keyword),
 			                           new SqlParameter("@image", info.image),
 			                           new SqlParameter("@altImage", info.altImage),
 			                           new SqlParameter("@isHot", info.isHot),
@@ -60,8 +62,7 @@ namespace Models.DataAccess
         public int Delete(int id)
         {
             SqlParameter[] param = {
-									   new SqlParameter("@id", id)
-			
+									   new SqlParameter("@id", id)			
 								   };
             return DataHelper.ExecuteNonQuery(Config.ConnectString, "usp_Product_Delete", param);
         }
@@ -87,6 +88,7 @@ namespace Models.DataAccess
                     info.description = r["description"].ToString();
                     info.contents = r["contents"].ToString();
                     info.tag = r["tag"].ToString();
+                    info.Keyword = r["Keyword"].ToString();
                     info.image = r["image"].ToString();
                     info.altImage = r["altImage"].ToString();
                     info.isHot = Convert.ToBoolean(r["isHot"]);
@@ -127,6 +129,7 @@ namespace Models.DataAccess
                     info.description = r["description"].ToString();
                     info.contents = r["contents"].ToString();
                     info.tag = r["tag"].ToString();
+                    info.Keyword = r["Keyword"].ToString();
                     info.image = r["image"].ToString();
                     info.altImage = r["altImage"].ToString();
                     info.isHot = Convert.ToBoolean(r["isHot"]);
@@ -169,6 +172,7 @@ namespace Models.DataAccess
                     info.description = r["description"].ToString();
                     info.contents = r["contents"].ToString();
                     info.tag = r["tag"].ToString();
+                    info.Keyword = r["Keyword"].ToString();
                     info.image = r["image"].ToString();
                     info.altImage = r["altImage"].ToString();
                     info.isHot = bool.Parse(r["isHot"].ToString());

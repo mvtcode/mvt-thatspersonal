@@ -49,7 +49,7 @@ namespace dongphucdangcap.com.admin
             drpCate.DataTextField = "name";
             drpCate.DataValueField = "id";
             drpCate.DataBind();
-            drpCate.Items.Insert(0, new ListItem("[ Tất cả ]", "0"));
+            //drpCate.Items.Insert(0, new ListItem("[ Tất cả ]", "0"));
         }
 
         protected void drpPageNum_SelectedIndexChanged(object sender, EventArgs e)
