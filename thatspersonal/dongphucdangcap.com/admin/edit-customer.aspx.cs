@@ -11,6 +11,7 @@ namespace dongphucdangcap.com.admin
 {
     public partial class edit_customer : System.Web.UI.Page
     {
+        protected bool IsEdit;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -31,6 +32,7 @@ namespace dongphucdangcap.com.admin
                 Response.Redirect("~/admin/");
                 return;
             }
+            IsEdit = true;
             Session["id"] = info.id;
             LB_Email.Text = info.Email;
             TB_FirstName.Text = info.FirstName;

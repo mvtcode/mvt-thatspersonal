@@ -22,7 +22,8 @@ namespace Models.DataAccess
 		                                new SqlParameter("@ProductId", info.ProductId),
 		                                new SqlParameter("@ProductName", info.ProductName),
 		                                new SqlParameter("@price", info.price),
-		                                new SqlParameter("@Number", info.Number)			
+		                                new SqlParameter("@Number", info.Number),
+                                        new SqlParameter("@size", info.size)
 		                            };
             return int.Parse(DataHelper.ExecuteScalar(Config.ConnectString, "usp_OrderDetail_Add", param).ToString());
         }
@@ -35,7 +36,8 @@ namespace Models.DataAccess
 			                           new SqlParameter("@ProductId", info.ProductId),
 			                           new SqlParameter("@ProductName", info.ProductName),
 			                           new SqlParameter("@price", info.price),
-			                           new SqlParameter("@Number", info.Number)			
+			                           new SqlParameter("@Number", info.Number),
+                                       new SqlParameter("@size", info.size)
 								   };
             return DataHelper.ExecuteNonQuery(Config.ConnectString, "usp_OrderDetail_Update", param);
         }
@@ -67,6 +69,7 @@ namespace Models.DataAccess
                     info.ProductName = r["ProductName"].ToString();
                     info.price = Int32.Parse(r["price"].ToString());
                     info.Number = Int32.Parse(r["Number"].ToString());
+                    info.size = r["size"].ToString();
                 }
                 r.Close();
                 r.Dispose();
@@ -98,6 +101,7 @@ namespace Models.DataAccess
                     info.ProductName = r["ProductName"].ToString();
                     info.price = Int32.Parse(r["price"].ToString());
                     info.Number = Int32.Parse(r["Number"].ToString());
+                    info.size = r["size"].ToString();
 
                     list.Add(info);
                 }
@@ -132,6 +136,7 @@ namespace Models.DataAccess
                     info.ProductName = r["ProductName"].ToString();
                     info.price = Int32.Parse(r["price"].ToString());
                     info.Number = Int32.Parse(r["Number"].ToString());
+                    info.size = r["size"].ToString();
 
                     list.Add(info);
                 }

@@ -1,11 +1,14 @@
 ﻿<%@ Page Title="Liên hệ" Language="C#" MasterPageFile="~/DP.Master" AutoEventWireup="true"
     CodeBehind="ChiTiet.aspx.cs" Inherits="dongphucdangcap.com.ChiTiet" %>
-
+<%@ Register src="UserControl/topNavigate.ascx" tagPrefix="usc" tagName="nav"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="/Scripts/hello.jquery.js" type="text/javascript"></script>
     <script src="/Scripts/cloud-zoom.1.0.2.min.js" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="page-title" style="padding:0">
+        <usc:nav runat="server" />
+    </div>
     <div id="messages_product_view"></div>
     <div id="product-top" class="product-view">
         <div class="product-essential">

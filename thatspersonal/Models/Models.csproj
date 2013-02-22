@@ -60,6 +60,7 @@
     <Compile Include="DataAccess\SliderImpl.cs" />
     <Compile Include="DataAccess\CustormerImpl.cs" />
     <Compile Include="DataAccess\UserImpl.cs" />
+    <Compile Include="Entity\Cart.cs" />
     <Compile Include="Entity\FacebookInfo.cs" />
     <Compile Include="Entity\NewsCategoryInfo.cs" />
     <Compile Include="Entity\NewsInfo.cs" />

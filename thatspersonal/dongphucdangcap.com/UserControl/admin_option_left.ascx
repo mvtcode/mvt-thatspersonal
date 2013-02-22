@@ -41,7 +41,7 @@
                     </a>
                 </li>
                  <li>
-                    <a href="#">
+                    <a href="list-order-product.aspx">
                         <span id="order-list"></span>
                         Danh sách đơn hàng
                     </a>

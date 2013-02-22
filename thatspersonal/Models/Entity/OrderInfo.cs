@@ -28,7 +28,7 @@ namespace Models.Entity
 		public int Shipping { get; set; }
 		public string TransitTime { get; set; }
 		public int Payment { get; set; }
-		public object TotalPayment { get; set; }
+		public int TotalPayment { get; set; }
 		public int ProductNumber { get; set; }
 		public int StatusOrder { get; set; }
 		public DateTime OnOrder { get; set; }

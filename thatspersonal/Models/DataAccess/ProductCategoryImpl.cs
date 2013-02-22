@@ -29,7 +29,11 @@ namespace Models.DataAccess
 			    new SqlParameter("@Summary", info.Summary),
 			    new SqlParameter("@Image", info.Image),
 			    new SqlParameter("@Zone", info.Zone),
-			    new SqlParameter("@RewriteTitle", info.RewriteTitle)			
+			    new SqlParameter("@RewriteTitle", info.RewriteTitle),
+                new SqlParameter("@imgbanner", info.imgbanner),
+			    new SqlParameter("@linkbanner", info.linkbanner),
+			    new SqlParameter("@titbanner", info.titbanner)
+
 		   };
             return int.Parse(DataHelper.ExecuteScalar(Config.ConnectString, "usp_ProductCategory_Add", param).ToString());           
         }
@@ -37,19 +41,22 @@ namespace Models.DataAccess
         public int Update(ProductCategoryInfo info)
         {
 			SqlParameter[] param = {
-									   new SqlParameter("@Id", info.Id)
-			,new SqlParameter("@Name", info.Name),
-			new SqlParameter("@Link", info.Link),
-			new SqlParameter("@Sort", info.Sort),
-			new SqlParameter("@Description", info.Description),
-			new SqlParameter("@MetaDescription", info.MetaDescription),
-			new SqlParameter("@MetaKeyword", info.MetaKeyword),
-			new SqlParameter("@MetaHeading", info.MetaHeading),
-			new SqlParameter("@ParentId", info.ParentId),
-			new SqlParameter("@Summary", info.Summary),
-			new SqlParameter("@Image", info.Image),
-			new SqlParameter("@Zone", info.Zone),
-			new SqlParameter("@RewriteTitle", info.RewriteTitle)			
+									   new SqlParameter("@Id", info.Id),
+                                       new SqlParameter("@Name", info.Name),
+			                           new SqlParameter("@Link", info.Link),
+			                           new SqlParameter("@Sort", info.Sort),
+			                           new SqlParameter("@Description", info.Description),
+			                           new SqlParameter("@MetaDescription", info.MetaDescription),
+			                           new SqlParameter("@MetaKeyword", info.MetaKeyword),
+			                           new SqlParameter("@MetaHeading", info.MetaHeading),
+			                           new SqlParameter("@ParentId", info.ParentId),
+			                           new SqlParameter("@Summary", info.Summary),
+			                           new SqlParameter("@Image", info.Image),
+			                           new SqlParameter("@Zone", info.Zone),
+			                           new SqlParameter("@RewriteTitle", info.RewriteTitle),
+                                       new SqlParameter("@imgbanner", info.imgbanner),
+			                           new SqlParameter("@linkbanner", info.linkbanner),
+			                           new SqlParameter("@titbanner", info.titbanner)
 								   };
             return DataHelper.ExecuteNonQuery(Config.ConnectString, "usp_ProductCategory_Update", param);    
         }
@@ -89,6 +96,10 @@ namespace Models.DataAccess
 			        info.Image = r["Image"].ToString();
 			        info.Zone = r["Zone"].ToString();
 			        info.RewriteTitle = r["RewriteTitle"].ToString();
+
+                    info.imgbanner = r["imgbanner"].ToString();
+                    info.linkbanner = r["linkbanner"].ToString();
+                    info.titbanner = r["titbanner"].ToString();
 				}
 				r.Close();
                 r.Dispose();
@@ -126,6 +137,9 @@ namespace Models.DataAccess
 			        info.Image = r["Image"].ToString();
 			        info.Zone = r["Zone"].ToString();
 			        info.RewriteTitle = r["RewriteTitle"].ToString();
+                    info.imgbanner = r["imgbanner"].ToString();
+                    info.linkbanner = r["linkbanner"].ToString();
+                    info.titbanner = r["titbanner"].ToString();
 					
                     list.Add(info);
                 }
@@ -167,6 +181,9 @@ namespace Models.DataAccess
                     info.Image = r["Image"].ToString();
                     info.Zone = r["Zone"].ToString();
                     info.RewriteTitle = r["RewriteTitle"].ToString();
+                    info.imgbanner = r["imgbanner"].ToString();
+                    info.linkbanner = r["linkbanner"].ToString();
+                    info.titbanner = r["titbanner"].ToString();
 
                     list.Add(info);
                 }
@@ -207,7 +224,9 @@ namespace Models.DataAccess
                     info.Image = r["Image"].ToString();
                     info.Zone = r["Zone"].ToString();
                     info.RewriteTitle = r["RewriteTitle"].ToString();
-
+                    info.imgbanner = r["imgbanner"].ToString();
+                    info.linkbanner = r["linkbanner"].ToString();
+                    info.titbanner = r["titbanner"].ToString();
 
                     list.Add(info);
                 }

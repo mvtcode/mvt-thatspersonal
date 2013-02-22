@@ -24,3 +24,16 @@ E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Models.pdb
 E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\ResolveAssemblyReference.cache
 E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.dll
 E:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\obj\Debug\dongphucdangcap.com.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\dongphucdangcap.com.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\dongphucdangcap.com.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\CKFinder.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Helpers.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Models.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\SunLaw.Core.dll
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Helpers.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\SunLaw.Core.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\CKFinder.pdb
+D:\Project\mvt-thatspersonal\thatspersonal\dongphucdangcap.com\bin\Models.pdb

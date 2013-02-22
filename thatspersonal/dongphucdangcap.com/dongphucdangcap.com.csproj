@@ -199,6 +199,13 @@
     <Compile Include="admin\list-news.aspx.designer.cs">
       <DependentUpon>list-news.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\list-order-product.aspx.cs">
+      <DependentUpon>list-order-product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\list-order-product.aspx.designer.cs">
+      <DependentUpon>list-order-product.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\list-partner.aspx.cs">
       <DependentUpon>list-partner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -562,6 +569,7 @@
     <Content Include="admin\list-category-product.aspx" />
     <Content Include="admin\list-customer.aspx" />
     <Content Include="admin\list-news.aspx" />
+    <Content Include="admin\list-order-product.aspx" />
     <Content Include="admin\list-partner.aspx" />
     <Content Include="admin\list-product.aspx" />
     <Content Include="admin\list-slideshow.aspx" />

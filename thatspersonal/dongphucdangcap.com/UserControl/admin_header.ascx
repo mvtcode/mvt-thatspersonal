@@ -32,7 +32,7 @@
                         <li><a class="icon_list" href="list-product.aspx">Danh sách đồng phục</a></li>
                         <li><a class="icon_category" href="list-category-product.aspx">Danh sách danh mục</a></li>
                         <li><a class="icon_add" href="edit-category-product.aspx">Thêm danh mục</a></li>
-                        <li><a class="icon_category" href="edit-order-product.aspx">Danh sách đơn hàng</a></li>
+                        <li><a class="icon_category" href="list-order-product.aspx">Danh sách đơn hàng</a></li>
                     </ul>
                 </li>
                 <%--<li>

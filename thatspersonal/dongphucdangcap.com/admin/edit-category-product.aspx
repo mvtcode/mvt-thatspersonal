@@ -4,6 +4,10 @@
         .Images {
             max-width: 200px;
         }
+        
+        .Images2 {
+            max-width: 600px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -96,6 +100,35 @@
                             <asp:TextBox ID="TB_Summary" runat="server" Rows="5" TextMode="MultiLine" Width="80%"/>
                         </td>
                     </tr>
+                    
+                    <tr class="tblSkinRow">
+                        <td class="tblSkinHeaderColumn">
+                            Ảnh banner
+                        </td>
+                        <td class="tblSkinValueColumn">
+                            <div style="padding: 4px 0">
+                                <asp:Image ID="Image2" runat="server" CssClass="Images" Style="border-width: 0px;
+                                border-style: None;" ImageUrl="/Images/no_pic.png" />
+                            </div>
+                            <asp:FileUpload ID="Upload_Banner" runat="server" Width="300px" />
+                        </td>
+                    </tr>
+                    <tr class="tblSkinRow">
+                        <td class="tblSkinHeaderColumn">
+                            Mô tả banner
+                        </td>
+                        <td class="tblSkinValueColumn">
+                            <asp:TextBox ID="TB_titbanner" runat="server" Width="80%"/>
+                        </td>
+                    </tr>
+                    <tr class="tblSkinRow">
+                        <td class="tblSkinHeaderColumn">
+                            Link banner
+                        </td>
+                        <td class="tblSkinValueColumn">
+                            <asp:TextBox ID="TB_linkbanner" runat="server" Width="80%"/>
+                        </td>
+                    </tr>
                     <%--<tr class="tblSkinRow">
                         <td class="tblSkinHeaderColumn">
                             Tag
@@ -126,6 +159,7 @@
                 <input runat="server" name="HD_ID" type="hidden" id="HD_ID" value="0"/>
                 <input runat="server" name="HD_TypeID" type="hidden" id="HD_TypeID" value="0"/>
                 <input runat="server" name="HD_Image" type="hidden" id="HD_Image"/>
+                <input runat="server" name="HD_ImageBanner" type="hidden" id="HD_ImageBanner"/>
             </div>
         </div>
     </div>

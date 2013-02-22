@@ -17,6 +17,7 @@ namespace tuanva.Core
         public const string LANGUAGE_DEFAULT = "vi-VN";
 
         public const string SESSION_KEY_LANGUAGE = "SESSION_KEY_LANGUAGE";
-    
+        public const string SESSION_KEY_CART = "SESSION_KEY_CART";
+        public const string SESSION_KEY_USER = "SESSION_KEY_USER";
     }
 }

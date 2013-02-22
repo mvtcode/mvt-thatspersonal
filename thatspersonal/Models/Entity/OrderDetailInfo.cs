@@ -11,6 +11,7 @@ namespace Models.Entity
 		public string ProductName { get; set; }
 		public int price { get; set; }
 		public int Number { get; set; }
+        public string size{ get; set; }
         public int total { get { return price * Number; } }
 	}
 }

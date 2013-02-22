@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Kiểm tra thông tin đơn hàng" Language="C#" MasterPageFile="~/admin/UniAdmin.Master" AutoEventWireup="true"
-    CodeBehind="edit-order-product.aspx.cs" Inherits="dongphucdangcap.com.admin.edit_order_product" %>
+﻿<%@ Page Title="Kiểm tra thông tin đơn hàng" Language="C#" MasterPageFile="~/admin/UniAdmin.Master"
+    AutoEventWireup="true" CodeBehind="edit-order-product.aspx.cs" Inherits="dongphucdangcap.com.admin.edit_order_product" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -15,9 +15,14 @@
         <div class="toolbar-action">
             <ul>
                 <li>
-                    <asp:LinkButton runat="server" ID="btnAc" OnClick="btnAc_Click">
-                        <span class="toolbar-update"></span>
+                    <asp:LinkButton runat="server" ID="Link_Save" OnClick="Link_Save_Click">
+                         <span class="toolbar-update"></span>
                         Lưu
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="Link_SaveAndBack" runat="server" 
+                        onclick="Link_SaveAndBack_Click">
+                         <span class="toolbar-update-back"></span>
+                        lưu và trở lại
                     </asp:LinkButton>
                     <a><span class="toolbar-support"></span>Hướng dẫn </a></li>
             </ul>
@@ -40,7 +45,7 @@
                                         Họ và tên:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblFullnameOrder">Cao Minh Tùy</span>
+                                        <asp:Label ID="LB_FullnameOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -48,7 +53,7 @@
                                         Giới tính:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblSexOrder">Nam</span>
+                                        <asp:Label ID="LB_SexOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -56,7 +61,7 @@
                                         Địa chỉ:
                                     </td>
                                     <td nowrap="nowrap">
-                                        <span id="ctl05_lblAddressOrder">Xóm lẻ - Triều khúc - Tân triều - Thanh trì - Hà nội</span>
+                                        <asp:Label ID="LB_AddressOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -64,23 +69,23 @@
                                         Email:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblEmailOrder">caominhtuy@gmail.com</span>
+                                        <asp:Label ID="LB_EmailOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
-                                <tr>
+                                <%--<tr>
                                     <td align="right" nowrap="" class="form_asterisk">
                                         Điện thoại:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblTellOrder">0333773751</span>
+                                        <asp:Label ID="LB_TellOrder" runat="server" Text=""></asp:Label>
                                     </td>
-                                </tr>
+                                </tr>--%>
                                 <tr>
                                     <td align="right" nowrap="" class="form_asterisk">
                                         Di động:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblMobileOrder">0979337990</span>
+                                        <asp:Label ID="LB_MobileOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -88,7 +93,7 @@
                                         Fax:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblFaxOrder">0333773751</span>
+                                        <asp:Label ID="LB_FaxOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -96,7 +101,7 @@
                                         Ghi chú:
                                     </td>
                                     <td>
-                                        fsdfs
+                                        <asp:Label ID="LB_OtherInfoOrder" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                             </tbody>
@@ -115,7 +120,7 @@
                                         Họ và tên:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblFullnameReceived">Cao Minh Tùy</span>
+                                        <asp:Label ID="LB_FullnameReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -123,7 +128,7 @@
                                         Giới tính:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblSexReceived">Nam</span>
+                                        <asp:Label ID="LB_SexReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -131,8 +136,7 @@
                                         Địa chỉ:
                                     </td>
                                     <td nowrap="nowrap">
-                                        <span id="ctl05_lblAddressReceived">Xóm lẻ - Triều khúc - Tân triều - Thanh trì - Hà
-                                            nội</span>
+                                        <asp:Label ID="LB_AddressReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -140,23 +144,23 @@
                                         Email:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblEmailReceived">caominhtuy@gmail.com</span>
+                                        <asp:Label ID="LB_EmailReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
-                                <tr>
+                                <%--<tr>
                                     <td align="right" nowrap="" class="form_asterisk">
                                         Điện thoại:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblTellReceived">0333773751</span>
+                                        <asp:Label ID="LB_TellReceived" runat="server" Text=""></asp:Label>
                                     </td>
-                                </tr>
+                                </tr>--%>
                                 <tr>
                                     <td align="right" nowrap="" class="form_asterisk">
                                         Di động:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblMobileReceived">0979337990</span>
+                                        <asp:Label ID="LB_MobileReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -164,7 +168,7 @@
                                         Fax:
                                     </td>
                                     <td>
-                                        <span id="ctl05_lblFaxReceived">0333773751</span>
+                                        <asp:Label ID="LB_FaxReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -172,7 +176,7 @@
                                         Ghi chú:
                                     </td>
                                     <td>
-                                        fsdfs
+                                        <asp:Label ID="LB_OtherInfoReceived" runat="server" Text=""></asp:Label>
                                     </td>
                                 </tr>
                             </tbody>
@@ -184,7 +188,7 @@
                 </tr>
             </tbody>
         </table>
-        <table cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 96%;">
+        <table cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 99%;">
             <tbody>
                 <tr>
                     <td nowrap="nowrap" colspan="2" class="td_order-detail-title">
@@ -196,7 +200,7 @@
                         Hình thức vận chuyển:
                     </td>
                     <td>
-                        Đến địa chỉ người nhận
+                        <asp:Label ID="LB_Shipping" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -204,7 +208,7 @@
                         Thời gian giao hàng:
                     </td>
                     <td>
-                        17/4/2012
+                        <asp:Label ID="LB_TransitTime" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -212,12 +216,12 @@
                         Hình thức thanh toán:
                     </td>
                     <td>
-                        Tiền mặt
+                        <asp:Label ID="LB_Payment" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <table width="100%" cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 96%;">
+        <table width="100%" cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 99%;">
             <tbody>
                 <tr>
                     <td nowrap="nowrap" class="td_order-detail-title">
@@ -227,12 +231,21 @@
                 <tr>
                     <td nowrap="nowrap">
                         <div>
+                            <asp:GridView runat="server" CssClass="tblList" ID="GV_Product" DataKeyNames="id"
+                                AutoGenerateColumns="False">
+                                <Columns>
+                                    <asp:BoundField DataField="ProductId" HeaderText="Mã sản phẩm"></asp:BoundField>
+                                    <asp:BoundField HeaderText="Tên sản phẩm" DataField="ProductName" />
+                                    <asp:BoundField HeaderText="Giá" DataField="price" DataFormatString="{0:N0}" />
+                                    <asp:BoundField DataField="Number" DataFormatString="{0:N0}" HeaderText="Số lượng" />
+                                </Columns>
+                            </asp:GridView>
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <table cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 96%;">
+        <table cellspacing="2" cellpadding="5" class="tbl_order-detail" style="width: 99%;">
             <tbody>
                 <tr>
                     <td nowrap="nowrap" colspan="2" class="td_order-detail-title">
@@ -241,21 +254,33 @@
                 </tr>
                 <tr>
                     <td class="form_asterisk1">
-                        Số lượng sản phẩm:
+                        Tổng đơn hàng:
                     </td>
                     <td>
-                        <span id="ctl05_lblNumber">1</span>
+                        <asp:Label ID="LB_ProductNumber" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="form_asterisk1">
-                        Tổng đơn hàng:
+                        Tổng Tiền:
                     </td>
                     <td>
-                        <span id="ctl05_lblTotal">2.400.000 VNĐ</span>
+                        <asp:Label ID="LB_TotalPayment" runat="server" Text=""></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form_asterisk1">
+                        Trạng thái đơn hàng:
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="DDL_StatusOrder" runat="server">
+                        </asp:DropDownList>
                     </td>
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div>
+        <input type="hidden" runat="server" id="HD_ID" value="0" />
     </div>
 </asp:Content>

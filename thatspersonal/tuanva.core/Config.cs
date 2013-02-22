@@ -13,7 +13,7 @@ namespace tuanva.Core
             {
                 if(string.IsNullOrEmpty(_ConnectionString)) _ConnectionString= Encrypt.DecryptConn(ConfigurationManager.AppSettings["conStr"]);
                 //return _ConnectionString;
-                return @"SERVER=sunlaw.com.vn;UID=webquanao;Password=mvt;database=dongphuc-new";
+               return @"SERVER=sunlaw.com.vn;UID=webquanao;Password=mvt;database=dongphuc-new";
             }
         }
         private static string _ImgPathShow;
@@ -140,6 +140,11 @@ namespace tuanva.Core
         public static int PageSizeProduct
         {
             get { return int.Parse(ConfigurationManager.AppSettings["PageSizeProduct"]); }
+        }
+
+        public static string SiteTitle
+        {
+            get { return ConfigurationManager.AppSettings["siteTitle"]; }
         }
     }
 }

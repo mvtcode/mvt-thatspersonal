@@ -14,13 +14,13 @@ namespace dongphucdangcap.com.admin
         {
             if (!IsPostBack)
             {
+                Load_DDL_Type();
                 if (Request.QueryString["id"] != null)
                 {
                     HD_ID.Value = Request.QueryString["id"];
                     int id = UntilityFunction.IntegerForNull(HD_ID.Value);
                     loadinfo(id);
                 }
-                Load_DDL_Type();
             }
         }
 
@@ -44,7 +44,7 @@ namespace dongphucdangcap.com.admin
                 HD_TypeID.Value = info.ParentId.ToString();
                 if (DDL_ProductType.Items.FindByValue(info.ParentId.ToString()) != null)
                     DDL_ProductType.Items.FindByValue(info.ParentId.ToString()).Selected = true;
-                Image1.ImageUrl = info.Image != ""
+                Image1.ImageUrl = (info.Image != "")
                                       ? Config.GetPathCategoryProduct + info.Image
                                       : Config.GetPathNoImage;
                 TB_Description.Text = info.Description;
@@ -52,6 +52,13 @@ namespace dongphucdangcap.com.admin
                 TB_MetaKeyword.Text = info.MetaKeyword;
                 TB_MetaHeading.Text = info.MetaHeading;
                 TB_Summary.Text = info.Summary;
+                //
+                HD_ImageBanner.Value = info.imgbanner;
+                Image2.ImageUrl = (info.imgbanner != "")
+                                      ? Config.GetPathCategoryProduct + info.imgbanner
+                                      : Config.GetPathNoImage;
+                TB_titbanner.Text = info.titbanner;
+                TB_linkbanner.Text = info.linkbanner;
             }
             else
             {
@@ -89,9 +96,17 @@ namespace dongphucdangcap.com.admin
             //upload image
             if (Upload_Images.HasFile)
             {
-                if (UploadImage()!="")
-                    HD_Image.Value = UploadImage();
+                string sfile = UploadImage();
+                if (sfile != "")
+                    HD_Image.Value = sfile;
             }
+            if (Upload_Banner.HasFile)
+            {
+                string sfile = UploadImage2();
+                if (sfile != "")
+                    HD_ImageBanner.Value = sfile;
+            }
+
             var info = new ProductCategoryInfo
                            {
                                Id = id,
@@ -106,7 +121,10 @@ namespace dongphucdangcap.com.admin
                                Summary = TB_Summary.Text.Trim(),
                                Image = HD_Image.Value,
                                Zone = "",
-                               RewriteTitle = ""
+                               RewriteTitle = "",
+                               imgbanner = HD_ImageBanner.Value,
+                               linkbanner = TB_linkbanner.Text,
+                               titbanner = TB_titbanner.Text
                            };
             if (id > 0)
             {
@@ -135,6 +153,11 @@ namespace dongphucdangcap.com.admin
             TB_MetaKeyword.Text = "";
             TB_MetaHeading.Text = "";
             TB_Summary.Text = "";
+            //
+            HD_ImageBanner.Value = "";
+            Image1.ImageUrl = Config.GetPathNoImage;
+            TB_titbanner.Text = "";
+            TB_linkbanner.Text = "";
         }
 
         private string UploadImage()
@@ -148,6 +171,25 @@ namespace dongphucdangcap.com.admin
                 if (!Directory.Exists(path)) Directory.CreateDirectory(path);
                 Upload_Images.SaveAs(path + filename + ext);
                 
+                //ResizeImage.ImageCrop(Upload_Images.FileBytes, path + "208.129." + filename + ext, 208, 129, 60);
+                //ResizeImage.ImageCrop(Upload_Images.FileBytes, path + "256.158." + filename + ext, 256, 158, 60);
+
+                returns = filename + ext;
+            }
+            return returns;
+        }
+
+        private string UploadImage2()
+        {
+            string returns = "";
+            var ext = Path.GetExtension(Upload_Banner.FileName).ToLower();
+            if (ext.Equals(".bmp") || ext.Equals(".gif") || ext.Equals(".jpg") || ext.Equals(".png") || ext.Equals(".jpeg"))
+            {
+                var filename = UnicodeUtility.UrlRewriting("banner-" +TB_Name.Text);
+                var path = Server.MapPath("~/images/CategoryProduct/");
+                if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+                Upload_Banner.SaveAs(path + filename + ext);
+
                 //ResizeImage.ImageCrop(Upload_Images.FileBytes, path + "208.129." + filename + ext, 208, 129, 60);
                 //ResizeImage.ImageCrop(Upload_Images.FileBytes, path + "256.158." + filename + ext, 256, 158, 60);
 
